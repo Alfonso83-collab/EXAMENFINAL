@@ -1,0 +1,15 @@
+<p [ngClass]="estilo">ALFONSO MONTALVO RIVERA</p>
+<div>
+    <input [(ngModel)]="estudiante" type="text"/>
+    <button style="color: red;" (click)="agregarestudiante()">Agregar alumno </button>
+</div>
+
+<div>
+    <p>{{estudiante}}</p>
+    <ol>
+        <li 
+        *ngFor="let elemento of miLista"
+        >{{ elemento }}
+    </li>
+    </ol>
+</div>
